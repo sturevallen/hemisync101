@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #1e90ff;
+  --active-color: #32cd32;
+  --hover-color: #4682b4;
+  --text-color: #e6e6fa;
+  --bg-color: #0a0a0a;
+  --card-bg: #1c2526;
+  --accent-color: #9370db;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: linear-gradient(135deg, #1c2526, #2d3748);
+  padding: 25px;
+  border-bottom: 3px solid var(--primary-color);
+  text-align: center;
+  width: 100%;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+h1 { font-size: 2.8rem; color: var(--accent-color); margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+h2 { font-size: 1.6rem; color: var(--primary-color); margin: 1.5rem 0; }
+h3 { font-size: 1.2rem; color: var(--accent-color); margin-bottom: 10px; }
+p { font-size: 1.1rem; color: #d3d3d3; }
+
+.container {
+  max-width: 1200px;
+  width: 95vw;
+  display: flex;
+  gap: 30px;
+}
+
+.menu {
+  width: 400px;
+  height: 400px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Ytterligare CSS-stilar här */
